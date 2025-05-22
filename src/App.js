@@ -1,4 +1,4 @@
-import { HashRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import "./style/landingPage.css";
 import "./style/mediaQuery.css";
@@ -20,24 +20,22 @@ import PivasScore from "./pages/PivasScore";
 const App = () => {
   return (
     <>
-      <HashRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/pivas" element={<Pivaspage />} />
-          <Route path="/pressure" element={<PressureInjury />} />
-          <Route path="/vidio" element={<VidioPage />} />
-          <Route path="/tentang" element={<TentangPage />} />
-          <Route path="/advice" element={<AdvicePage />} />
-          <Route path="/advice2" element={<AdvicePage2 />} />
-          <Route path="/advice3" element={<AdvicePage3 />} />
-          <Route path="/advice4" element={<AdvicePage4 />} />
-          <Route path="/advice5" element={<AdvicePage5 />} />
-          <Route path="/unstageable" element={<Unstageable />} />
-          <Route path="/suspect" element={<Suspect />} />
-          <Route path="/scorepivas" element={<PivasScore />} />
-          <Route path="*" element={<NotFoundPage />} />
-        </Routes>
-      </HashRouter>
+      <Routes>
+        <Route path="#" element={<Home />}></Route>
+        <Route path="pivas" element={<Pivaspage />}></Route>
+        <Route path="pressure" element={<PressureInjury />}></Route>
+        <Route path="vidio" element={<VidioPage />}></Route>
+        <Route path="tentang" element={<TentangPage />}></Route>
+        <Route path="advice" element={<AdvicePage />}></Route>
+        <Route path="advice2" element={<AdvicePage2 />}></Route>
+        <Route path="advice3" element={<AdvicePage3 />}></Route>
+        <Route path="advice4" element={<AdvicePage4 />}></Route>
+        <Route path="advice5" element={<AdvicePage5 />}></Route>
+        <Route path="unstageable" element={<Unstageable />}></Route>
+        <Route path="suspect" element={<Suspect />}></Route>
+        <Route path="scorepivas" element={<PivasScore />}></Route>
+        <Route path="*" element={<NotFoundPage />}></Route>
+      </Routes>
     </>
   );
 };
