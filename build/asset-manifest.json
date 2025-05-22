@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/Nsiassistant/static/css/main.97b9e312.css",
-    "main.js": "/Nsiassistant/static/js/main.01a1f5f7.js",
+    "main.css": "/Nsiassistant/static/css/main.c7356cc1.css",
+    "main.js": "/Nsiassistant/static/js/main.be164b94.js",
     "static/js/453.05a46c7a.chunk.js": "/Nsiassistant/static/js/453.05a46c7a.chunk.js",
     "static/media/ayang.jpg": "/Nsiassistant/static/media/ayang.5ec2124cae0ae80f8d8e.jpg",
+    "static/media/prop.png": "/Nsiassistant/static/media/prop.3afcc7b90f1c81925e2f.png",
     "static/media/asisten.png": "/Nsiassistant/static/media/asisten.b956be5ecd2dc7bf7467.png",
     "static/media/bootstrap-icons.woff?": "/Nsiassistant/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
     "static/media/history.png": "/Nsiassistant/static/media/history.81d3e37f59ac429896ef.png",
@@ -27,12 +28,12 @@
     "static/media/nacl.jpg": "/Nsiassistant/static/media/nacl.e58aecface681a7e5ba3.jpg",
     "static/media/batigras.jpg": "/Nsiassistant/static/media/batigras.41b6c95e16a7b6b8e221.jpg",
     "index.html": "/Nsiassistant/index.html",
-    "main.97b9e312.css.map": "/Nsiassistant/static/css/main.97b9e312.css.map",
-    "main.01a1f5f7.js.map": "/Nsiassistant/static/js/main.01a1f5f7.js.map",
+    "main.c7356cc1.css.map": "/Nsiassistant/static/css/main.c7356cc1.css.map",
+    "main.be164b94.js.map": "/Nsiassistant/static/js/main.be164b94.js.map",
     "453.05a46c7a.chunk.js.map": "/Nsiassistant/static/js/453.05a46c7a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.97b9e312.css",
-    "static/js/main.01a1f5f7.js"
+    "static/css/main.c7356cc1.css",
+    "static/js/main.be164b94.js"
   ]
 }

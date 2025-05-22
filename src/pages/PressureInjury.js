@@ -13,9 +13,9 @@ import { Link } from "react-router-dom";
 import Form from "react-bootstrap/Form";
 
 const History = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0); // scroll ke atas saat halaman dimuat
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0); // scroll ke atas saat halaman dimuat
+  // }, []);
 
   // logic of braden
   const [sensori, setSensori] = useState("4");
@@ -131,7 +131,7 @@ const History = () => {
       </h3> */}
       <nav>
         <div
-          className="custom-nav-injury fixed-top mt-5 nav nav-tabs text-center mx-auto nav  pt-4 border-bottom border-warning  "
+          className="custom-nav-injury fixed-top mt-5 nav nav-tabs  nav pt-4 border-bottom border-warning  "
           id="nav-tab"
           role="tablist"
         >
@@ -204,7 +204,7 @@ const History = () => {
           </button>
         </div>
       </nav>
-      <div className="tab-content container mt-3" id="nav-tabContent">
+      <div className="tab-content container mt-4" id="nav-tabContent">
         {/* start page injury */}
         <div
           className="tab-pane pt-2 fade show active"

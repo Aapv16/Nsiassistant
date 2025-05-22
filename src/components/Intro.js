@@ -3,6 +3,7 @@ import history from "../assets/lucu/history.png";
 import asisten from "../assets/lucu/asisten.png";
 import tentang from "../assets/lucu/tentang.png";
 import Fallrisk from "../assets/lucu/fallrisk.png";
+import prop from "../assets/lucu/prop.png";
 
 const Intro = () => {
   // const navigate = useNavigate();
@@ -11,7 +12,7 @@ const Intro = () => {
       <div className="container mx-auto col-lg-12   ">
         <div className="row" style={{ marginTop: "1rem" }}>
           {/* card comp */}
-          <div className="mt-5 text-center ">
+          <div className="text-center pt-5 mt-5 ">
             <div className="custom-intro mx-auto col-lg-6 gap-lg-1 d-lg-flex mt-5">
               <Componen
                 image={asisten}

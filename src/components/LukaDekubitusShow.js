@@ -45,10 +45,14 @@ const LukaDekubitusShow = ({ body, warna }) => {
               </div>
               <p className="mb-3">{body}</p>
               <Link to="/advice">
-                <button className="btn btn-primary" to="/advice">
-                  Go to Advice
-                  <i className="bi bi-arrow-right fs-4 mx-2 align-middle mt-1"></i>
-                </button>
+                <div className="d-flex justify-content-end">
+                  <button
+                    className="btn btn-primary w-25  opacity-75 border border-secondary"
+                    to="/advice"
+                  >
+                    <i className="bi bi-search fs-4 mx-2 align-middle mt-1"></i>
+                  </button>
+                </div>
               </Link>
             </div>
           </div>
