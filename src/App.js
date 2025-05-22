@@ -21,19 +21,19 @@ const App = () => {
   return (
     <>
       <Routes>
-        <Route path="#" element={<Home />}></Route>
-        <Route path="pivas" element={<Pivaspage />}></Route>
-        <Route path="pressure" element={<PressureInjury />}></Route>
-        <Route path="vidio" element={<VidioPage />}></Route>
-        <Route path="tentang" element={<TentangPage />}></Route>
-        <Route path="advice" element={<AdvicePage />}></Route>
-        <Route path="advice2" element={<AdvicePage2 />}></Route>
-        <Route path="advice3" element={<AdvicePage3 />}></Route>
-        <Route path="advice4" element={<AdvicePage4 />}></Route>
-        <Route path="advice5" element={<AdvicePage5 />}></Route>
-        <Route path="unstageable" element={<Unstageable />}></Route>
-        <Route path="suspect" element={<Suspect />}></Route>
-        <Route path="scorepivas" element={<PivasScore />}></Route>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/pivas" element={<Pivaspage />}></Route>
+        <Route path="/pressure" element={<PressureInjury />}></Route>
+        <Route path="/vidio" element={<VidioPage />}></Route>
+        <Route path="/tentang" element={<TentangPage />}></Route>
+        <Route path="/advice" element={<AdvicePage />}></Route>
+        <Route path="/advice2" element={<AdvicePage2 />}></Route>
+        <Route path="/advice3" element={<AdvicePage3 />}></Route>
+        <Route path="/advice4" element={<AdvicePage4 />}></Route>
+        <Route path="/advice5" element={<AdvicePage5 />}></Route>
+        <Route path="/unstageable" element={<Unstageable />}></Route>
+        <Route path="/suspect" element={<Suspect />}></Route>
+        <Route path="/scorepivas" element={<PivasScore />}></Route>
         <Route path="*" element={<NotFoundPage />}></Route>
       </Routes>
     </>
