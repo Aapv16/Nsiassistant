@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/Nsiassistant/static/css/main.97b9e312.css",
+    "main.js": "/Nsiassistant/static/js/main.4f383d7d.js",
+    "static/js/453.05a46c7a.chunk.js": "/Nsiassistant/static/js/453.05a46c7a.chunk.js",
+    "static/media/ayang.jpg": "/Nsiassistant/static/media/ayang.5ec2124cae0ae80f8d8e.jpg",
+    "static/media/asisten.png": "/Nsiassistant/static/media/asisten.b956be5ecd2dc7bf7467.png",
+    "static/media/bootstrap-icons.woff?": "/Nsiassistant/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
+    "static/media/history.png": "/Nsiassistant/static/media/history.81d3e37f59ac429896ef.png",
+    "static/media/pivas5.png": "/Nsiassistant/static/media/pivas5.630846dc74e1b5dadfbf.png",
+    "static/media/pivas4.png": "/Nsiassistant/static/media/pivas4.78b63fe411f270039fee.png",
+    "static/media/bootstrap-icons.woff2?": "/Nsiassistant/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
+    "static/media/tentang.png": "/Nsiassistant/static/media/tentang.4a856f0a1eb74ec8d4ed.png",
+    "static/media/pivas3.png": "/Nsiassistant/static/media/pivas3.d81fc38b6a3220f0f579.png",
+    "static/media/pivas2.png": "/Nsiassistant/static/media/pivas2.8248b737ff1a30626649.png",
+    "static/media/pivas1.png": "/Nsiassistant/static/media/pivas1.584c6064e1268e3ea5be.png",
+    "static/media/normal.jpg": "/Nsiassistant/static/media/normal.d057382b2acf8e4af89e.jpg",
+    "static/media/stageIII.jpg": "/Nsiassistant/static/media/stageIII.f66717403e2ce1fafce6.jpg",
+    "static/media/fallrisk.png": "/Nsiassistant/static/media/fallrisk.3b54ac3bc202c87a3726.png",
+    "static/media/stageII.jpg": "/Nsiassistant/static/media/stageII.36d94cfa3dd2f6258717.jpg",
+    "static/media/unstable.jpg": "/Nsiassistant/static/media/unstable.c954b626f7ecb097f775.jpg",
+    "static/media/Stage1.png.jpg": "/Nsiassistant/static/media/Stage1.png.9adb5f6ad3ab1b2b4372.jpg",
+    "static/media/stageIV.jpg": "/Nsiassistant/static/media/stageIV.c4f6af39080e186c295d.jpg",
+    "static/media/suspect.jpg": "/Nsiassistant/static/media/suspect.73ca7b5f87efa31a9314.jpg",
+    "static/media/kasa.jpg": "/Nsiassistant/static/media/kasa.73457a00a024be630c3b.jpg",
+    "static/media/intact skin.jpg": "/Nsiassistant/static/media/intact skin.78bf92b0df569748b114.jpg",
+    "static/media/nacl.jpg": "/Nsiassistant/static/media/nacl.e58aecface681a7e5ba3.jpg",
+    "static/media/batigras.jpg": "/Nsiassistant/static/media/batigras.41b6c95e16a7b6b8e221.jpg",
+    "index.html": "/Nsiassistant/index.html",
+    "main.97b9e312.css.map": "/Nsiassistant/static/css/main.97b9e312.css.map",
+    "main.4f383d7d.js.map": "/Nsiassistant/static/js/main.4f383d7d.js.map",
+    "453.05a46c7a.chunk.js.map": "/Nsiassistant/static/js/453.05a46c7a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.97b9e312.css",
+    "static/js/main.4f383d7d.js"
+  ]
+}
