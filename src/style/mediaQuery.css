@@ -1,0 +1,112 @@
+/* media queris */
+.menu {
+  display: none;
+}
+
+.offcanvas-link {
+  margin-left: -2rem;
+}
+.offcanvas-link a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  margin: 0.1rem 0;
+}
+.offcanvas-link a i {
+  display: inline-block;
+  position: relative;
+  margin-right: 0.2rem;
+  width: 2rem;
+}
+.custom-nav {
+  width: 30rem;
+}
+.custom-nav-injury {
+  width: auto;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  height: 4.2rem;
+  background-color: rgb(255, 255, 255);
+}
+
+/* .offcanvas-link a::after { */
+/* dibawah ini kita buat border animasi */
+/* content: ""; */
+/* conten kita kosongkan agar kita bisa atur dimensi obejcnya */
+/* display: block;
+  padding-bottom: 0.2rem;
+  border-bottom: 2px solid rgb(24, 24, 24);
+  transform: scaleX(0);
+  transform-origin: 0 0;
+  transition: 0.3s linear; */
+/* } */
+
+/* .offcanvas-link a:hover::after {
+  transform: scaleX(0.8);
+  border-bottom: 2px solid rgb(255, 208, 0);
+  margin-top: -4px;
+} */
+
+a h4 {
+  color: rgb(22, 22, 22);
+  transition: 0.2s linear;
+  margin: 1rem 0;
+}
+h4:hover {
+  color: rgb(0, 0, 0);
+}
+
+/* laptop */
+@media (max-width: 1366px) {
+  .menu {
+    display: none;
+  }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  .menu {
+    display: block;
+  }
+}
+
+/* mobile phone */
+
+@media (max-width: 450px) {
+  .search {
+    display: none;
+  }
+  .title {
+    font-size: medium;
+    font-size: 1.5rem;
+    font-weight: 700;
+    justify-content: center;
+    text-align: left;
+    width: 23rem;
+    padding: 2rem 0;
+  }
+  .custom-image {
+    margin-left: 1rem;
+  }
+
+  .custom-intro {
+    display: grid;
+    gap: 0.2rem;
+    /* background-color: black; */
+    width: 23rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .custom-nav {
+    width: 21rem;
+  }
+  .head {
+    height: 87vh;
+  }
+  .custom-nav-injury {
+    width: auto;
+    margin-bottom: 1rem;
+    height: 4.5rem;
+    background-color: rgb(255, 255, 255);
+  }
+}

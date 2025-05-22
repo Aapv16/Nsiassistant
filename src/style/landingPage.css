@@ -1,0 +1,113 @@
+.myBG {
+  height: 100vh;
+  /* background: url("../assets/lucu/3D_Animation_Style_caricature_dysnea_0.jpg"); */
+  background-size: cover;
+  background-color: #1a1a19;
+}
+.head {
+  height: 90vh;
+
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  background-color: #f7f4f4;
+}
+
+.navbg {
+  background-color: #f7f4f4;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1;
+  text-shadow: 2px 2px #e9e9e9;
+  color: #151414;
+  letter-spacing: 2px;
+}
+
+/* Navbar */
+link {
+  text-decoration: none;
+  color: inherit;
+}
+.link-auto .navbar-nav-cus a::after {
+  /* dibawah ini kita buat border animasi */
+  content: "";
+  /* conten kita kosongkan agar kita bisa atur dimensi obejcnya */
+  display: block;
+  padding-bottom: 0px;
+  border-bottom: 0.6px solid #ffa200;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.link-auto .navbar-nav-cus a:hover::after {
+  transform: scaleX(0.9);
+}
+/* diatas ini kita buat border animasi */
+/* navbar *
+
+/* Layout trending */
+
+.trending {
+  height: 100vh;
+  background: url("../assets/lucu/ayang.jpg");
+  background-size: cover;
+}
+.ayang {
+  width: 150px;
+  height: 100px;
+}
+
+.link-auto .navbar-nav-cus {
+  display: flex;
+  justify-content: center;
+  padding-left: 14rem;
+}
+/* card comp */
+.custom {
+  margin-top: 4rem;
+}
+
+.custom-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.custom-image {
+  margin: 0rem 2.4rem;
+  /* justify-content: center; */
+  margin-bottom: 0.5rem;
+  border: 1px solid navajowhite;
+  box-shadow: 11px 9px 11px -7px rgba(0, 0, 0, 0.39);
+  -webkit-box-shadow: 11px 9px 11px -7px rgba(0, 0, 0, 0.39);
+  -moz-box-shadow: 11px 9px 11px -7px rgba(0, 0, 0, 0.39);
+}
+
+/* card comp */
+/* start ini penting agar tida auti scale */
+input,
+select,
+textarea {
+  font-size: 16px !important;
+}
+/*end ini penting agar tida auti scale */
+
+.custom-nav {
+  width: 25rem;
+}
+
+.nav-item {
+  color: #00000062;
+  background-color: #fff;
+}
+
+.nav-item.active {
+  border-radius: 5px 5px 0 0;
+  width: auto;
+  color: #000000;
+  border: 1.5px solid #ffb028;
+  border-bottom: #e9e9e9;
+  /* margin-bottom: 3px; */
+}
