@@ -22,12 +22,12 @@ function Example() {
         </div>
       </Button>
 
-      <Offcanvas className="w-75 d-lg-none " show={show} onHide={handleClose}>
+      <Offcanvas className="w-75 d-lg-none  " show={show} onHide={handleClose}>
         <Offcanvas.Header
           closeButton
-          className="border border-bottom-3 d-lg-none "
+          className="border-bottom border-warning d-lg-none "
         >
-          <Offcanvas.Title>NSIA Asistent</Offcanvas.Title>
+          <Offcanvas.Title className="">NSIA Asistent</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
           <div className="offcanvas-link">

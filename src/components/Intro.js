@@ -3,6 +3,7 @@ import history from "../assets/lucu/history.png";
 import asisten from "../assets/lucu/asisten.png";
 import tentang from "../assets/lucu/tentang.png";
 import Fallrisk from "../assets/lucu/fallrisk.png";
+import FormBox from "../components/FormBox";
 import prop from "../assets/lucu/prop.png";
 
 const Intro = () => {
@@ -40,13 +41,14 @@ const Intro = () => {
                 id="vidio"
                 to="/vidio"
               />
-              <Componen
+
+              <FormBox
                 image={tentang}
                 // href="https://www.youtube.com/watch?v=yykwIVI1LMU"
                 kategori="Tentang"
                 judul="Tentang"
                 id="tentang"
-                to="/tentang"
+                link="https://aapv16.github.io/forminput/"
               />
             </div>
           </div>

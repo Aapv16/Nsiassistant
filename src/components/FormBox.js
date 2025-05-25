@@ -1,14 +1,14 @@
 import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-const Cardcomponents = ({ id, image, kategori, judul, body, to }) => {
+const Cardcomponents = ({ id, image, kategori, judul, body, to, link }) => {
   return (
     <Card
       type="button"
       className="border border-warning  w-100 mx-auto h-auto col-lg  "
       style={{ width: "18rem", height: "15rem" }}
     >
-      <Link to={to}>
+      <a href={link} to={to}>
         <Card.Body type="button">
           <Card.Title className="text-center opacity-75 ">
             {/* Card Title */}
@@ -78,7 +78,7 @@ const Cardcomponents = ({ id, image, kategori, judul, body, to }) => {
             {/* end modal */}
           </Card.Text>
         </Card.Body>
-      </Link>
+      </a>
     </Card>
   );
 };

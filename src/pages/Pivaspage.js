@@ -10,108 +10,9 @@ import pivas4 from "../assets/lucu/pivas4.png";
 import pivas5 from "../assets/lucu/pivas5.png";
 
 const Pivaspage = () => {
-  const [nama, setNama] = useState("");
-  const [noRM, setNoRM] = useState("");
-  const [penampakan, setPenampakan] = useState("0");
-  const [teraba, setTeraba] = useState("0");
-  const [riwayat, setRiwayat] = useState("0");
-  const [faktor, setFaktor] = useState("1");
-  const [totalSkor, setTotalSkor] = useState(" Hasil");
-  const [boxInfo, setBoxInfo] = useState(false);
-  const [boxStyle, setBoxStyle] = useState("");
-  const [modalInfo, setModalInfo] = useState(false);
-  const [modalBody, setModalBody] = useState("");
-
-  const handleSubmit = (e) => {
-    e.preventDefault(e);
-    const total =
-      Number(penampakan) + Number(teraba) + Number(riwayat) + Number(faktor);
-    setTotalSkor(total);
-
-    if (total >= 0 && total <= 3) {
-      setBoxStyle("success");
-    }
-    if (total >= 4 && total <= 5) {
-      setBoxStyle("warning");
-    }
-    if (total >= 6 && total <= 10) {
-      setBoxStyle("danger");
-    }
-  };
-
-  const handleClick = () => {
-    if (nama.trim() === "" || noRM.trim() === "") {
-      return;
-    }
-    setBoxInfo(true);
-  };
-
-  const handleClickInfo = () => {
-    if (totalSkor >= 0 && totalSkor <= 3) {
-      // alert("Lakukan pemasangan IV kateter");
-      setModalInfo(true);
-      setModalBody(" ✅ Lakukan pemasangan IV kateter");
-      // window.location.href = "/vidio";
-    }
-    if (totalSkor >= 4 && totalSkor <= 5) {
-      setModalBody(
-        "Pemasangan akses diberikan kepada petugas yang lebih kompeten. Konsul ke tim Infus atau Spesialis akses vaskular."
-      );
-    }
-    if (totalSkor >= 6 && totalSkor <= 10) {
-      setModalBody(
-        "Resiko tinggi 🚨 : Pertimbangkan pemasangan akses emergency (CVC, IO). Konsul Spesialis akses vaskular."
-      );
-
-      // window.location.href = "/suspect";
-    }
-  };
-
   return (
     <>
       <NavigationBar logo="Divas Asistent" />
-      {/* start modal box */}
-      <>
-        <div
-          className="modal fade"
-          show={modalInfo} //penting
-          onHide={() => setModalInfo(false)} //penting
-          id="exampleModal"
-          tabindex="-1"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-        >
-          <div className="modal-dialog  modal-dialog modal-dialog-centered ">
-            <div className="modal-content">
-              <div className="modal-header">
-                <h1 className="modal-title fs-5" id="exampleModalLabel">
-                  Advice
-                </h1>
-                <button
-                  type="button"
-                  className="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div className="modal-body modal-sm">{modalBody} </div>
-              <div className="modal-footer">
-                <button
-                  type="button"
-                  className="btn btn-secondary"
-                  data-bs-dismiss="modal"
-                >
-                  Close
-                </button>
-                {/* <button type="button" className="btn btn-primary">
-                  Save changes
-                </button> */}
-              </div>
-            </div>
-          </div>
-        </div>
-      </>
-      {/* end modal box */}
 
       <nav className="custom-nav pt-4 mt-5 mx-auto ">
         <div
@@ -130,6 +31,7 @@ const Pivaspage = () => {
             aria-selected="true"
           >
             Form
+            <a href="https://aapv16.github.io/forminput/"> </a>
           </button>
           <button
             className="nav-link link-secondary link-underline-opacity-25 link-underline-opacity-100-hover "
@@ -149,150 +51,32 @@ const Pivaspage = () => {
       <div className="tab-content" id="nav-tabContent">
         {/* start body 1 */}
         <div
-          className="tab-pane fade show active"
+          class="tab-pane fade show active"
           id="nav-home"
           role="tabpanel"
           aria-labelledby="nav-home-tab"
           tabindex="0"
         >
           <>
-            {/* <h3 className="text-center mx-auto pt-5 mt-5 mb-3 mr-lg border-bottom w-50">
-              Divas Asistent
-            </h3> */}
-            <div className="Container mx-4 mb-3 ">
-              <div className=" col-lg-4 mx-auto border border-warning p-2 rounded-2 mt-1">
-                <form onSubmit={handleSubmit}>
-                  {/* name */}
-                  <div className="mb-1 ">
-                    <h6>Nama Lengkap :</h6>
-                    <input
-                      type="text"
-                      className="form-control form-control-sm"
-                      value={nama}
-                      onChange={(e) => setNama(e.target.value)}
-                      required
-                      placeholder="Nama Lengkap"
-                    />
-                  </div>
-                  {/* name */}
-                  {/* no MR */}
-                  <div class="mb-1">
-                    <h6>No RM :</h6>
-                    <input
-                      type="number"
-                      className="form-control form-control-sm"
-                      value={noRM}
-                      onChange={(e) => setNoRM(e.target.value)}
-                      required
-                      placeholder="no Rekam medis"
-                    />
-                  </div>
-                  {/* no MR */}
-                  {/* param 1 */}
-                  <h6 className="opacity-100">Penampakan vena :</h6>
-                  <Form.Select
-                    size="sm"
-                    className="mb-1"
-                    value={penampakan}
-                    onChange={(e) => setPenampakan(e.target.value)}
-                    aria-label="Default select example"
-                    placeholder="name@example.com"
-                  >
-                    <option value="0">Banyak vena yang tampak </option>
-                    <option value="1">Sedikit vena yang tampak </option>
-                    <option value="2">Tidak ada vena yang tampak </option>
-                  </Form.Select>
-                  {/* param 1 */}
-                  {/* param 2 */}
-                  <h6 className="opacity-100">Vena teraba :</h6>
-                  <Form.Select
-                    size="sm"
-                    className="mb-1"
-                    aria-label="Default select example"
-                    value={teraba}
-                    onChange={(e) => setTeraba(e.target.value)}
-                  >
-                    <option value="0">Banyak vena yang teraba </option>
-                    <option value="1">Sedikit vena yang teraba </option>
-                    <option value="2">Tidak ada vena yang teraba </option>
-                  </Form.Select>
-                  {/* param 2 */}
-                  {/* param 3 */}
-                  <h6 className="opacity-100">Riwayat infus sulit :</h6>
-                  <Form.Select
-                    size="sm"
-                    className="mb-1"
-                    aria-label="Default select example"
-                    value={riwayat}
-                    onChange={(e) => setRiwayat(e.target.value)}
-                  >
-                    <option value="0">Tidak ada</option>
-                    <option value="1">Dilaporkan beberapa kali </option>
-                    <option value="2">Infus sulit</option>
-                  </Form.Select>
-                  {/* param 3 */}
-                  {/* param 4 */}
-                  <h6 className="opacity-100">Faktor tambahan :</h6>
-                  <Form.Select
-                    size="sm"
-                    className="mb-2"
-                    aria-label="Default select example"
-                    value={faktor}
-                    onChange={(e) => setFaktor(e.target.value)}
-                  >
-                    <option value="0">Tidak ada</option>
-                    <option value="1">
-                      Pasien anak, adanya kesulitan dan kebutuhan akses mendesak
-                      (urgent)
-                    </option>
-                    <option value="2">Penyakit dan kebutuhan emergency</option>
-                  </Form.Select>
-                  <button
-                    type="submit"
-                    onClick={handleClick}
-                    className="btn btn-primary w-100"
-                  >
-                    Hitung
-                  </button>
-                  {/* hasil */}
-                  {/* start body */}
-                  {totalSkor !== null && (
-                    <div
-                      // className=" alert alert-success mt-2 d-flex "
-                      className={` mt-2 d-flex alert alert-${boxStyle}`}
-                    >
-                      {/* {totalSkor >= 1 && totalSkor <= 3
-                        ? "Box ini Hijau"
-                        : totalSkor >= 4 && totalSkor <= 6
-                        ? "Box ini Kuning"
-                        : "Box ini Merah"} */}
-                      <h1 className="align-items-center mx-auto mt-2 opacity-75 ">
-                        {totalSkor}
-                      </h1>
-                      {boxInfo && (
-                        <button type="submit" className="btn btn-primary w-50">
-                          <Link
-                            onClick={handleClickInfo}
-                            className="btn btn-primary"
-                            data-bs-toggle="modal"
-                            data-bs-target="#exampleModal"
-                          >
-                            Advice
-                          </Link>
-                        </button>
-                      )}
-                    </div>
-                  )}
-
-                  <meta
-                    name="viewport"
-                    content="width=device-width, initial-scale=1"
-                  ></meta>
-                </form>
+            <div className="card mt-3 container" style={{ width: "22rem" }}>
+              <img src="..." className="card-img-top" alt="..." />
+              <div className="card-body">
+                <h5 className="card-title">Card title</h5>
+                <p className="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card’s content.
+                </p>
+                <a
+                  href="https://aapv16.github.io/forminput/"
+                  className="btn btn-primary opacity-75 border border-warning"
+                >
+                  Hitung Divas <i class="bi bi-calculator"></i>
+                </a>
               </div>
             </div>
           </>
         </div>
+
         {/* end body 1 */}
 
         {/* start body 2 */}

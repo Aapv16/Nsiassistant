@@ -1,6 +1,5 @@
 import NavigationBar from "../components/NavigationBar";
-import Advice from "../components/Advice";
-
+import FormBox from "../components/FormBox";
 const VidioPage = () => {
   return (
     <>
@@ -9,7 +8,7 @@ const VidioPage = () => {
       <>
         <>
           <NavigationBar logo="Fallrisk" />
-          <div className="container mt-5 " id="accordionFlushExample">
+          {/* <div className="container mt-5 " id="accordionFlushExample">
             <div className="row">
               <div className="Col-lg-6 pt-5 mt-1 ">
                 <Advice
@@ -52,7 +51,9 @@ const VidioPage = () => {
               poin3="◉ Perioperatif : Munro"
               display="d-none"
             />
-          </div>
+          </div> */}
+          <h1 className="pt-5 mt-5 text-center">okkkkk</h1>
+          <FormBox />
         </>
       </>
     </>
