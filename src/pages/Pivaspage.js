@@ -69,7 +69,7 @@ const Pivaspage = () => {
         >
           <>
             <div className="card mt-1 container" style={{ width: "22rem" }}>
-              <img src={at} className="card-img-top mt-3" alt="..." />
+              <img src={at} className="card-img-top mt-3 rounded" alt="..." />
               <div className="card-body">
                 <h5 className="card-title">Divas Score</h5>
                 <p

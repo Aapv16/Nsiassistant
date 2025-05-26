@@ -4,7 +4,7 @@ import asisten from "../assets/lucu/asisten.png";
 import tentang from "../assets/lucu/tentang.png";
 import Fallrisk from "../assets/lucu/fallrisk.png";
 import FormBox from "../components/FormBox";
-import at from "../assets/lucu/at.png";
+import dashboard from "../assets/lucu/dashboard.png";
 
 const Intro = () => {
   // const navigate = useNavigate();
@@ -14,7 +14,7 @@ const Intro = () => {
       <div style={{ marginTop: "2.5rem" }}>
         <div className="mx-auto" style={{ width: "24.5rem", height: "9rem" }}>
           <img
-            src={at}
+            src={dashboard}
             className="card-img-top mt-3 rounded-2  mx-auto "
             alt="Divas"
           />
