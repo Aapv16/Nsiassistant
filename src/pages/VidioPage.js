@@ -1,6 +1,8 @@
 import NavigationBar from "../components/NavigationBar";
-import FormBox from "../components/FormBox";
+import { useState } from "react";
+
 const VidioPage = () => {
+  const [active, setActive] = useState("fallrisk");
   return (
     <>
       <NavigationBar />
@@ -52,8 +54,126 @@ const VidioPage = () => {
               display="d-none"
             />
           </div> */}
-          <h1 className="pt-5 mt-5 text-center">okkkkk</h1>
-          <FormBox />
+          <h1 className="pt-5 text-center"></h1>
+
+          {/* start penampung */}
+          <nav className="d-flex justify-content-center">
+            <div
+              className="nav-custom-fallrisk nav nav-tabs  border-bottom border-warning"
+              id="nav-tab"
+              role="tablist"
+            >
+              <button
+                // start even active"
+                onClick={() => setActive("fallrisk")}
+                className={
+                  active === "fallrisk"
+                    ? "nav-item active"
+                    : "nav-link link-secondary"
+                }
+                // end even active
+                id="nav-home-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-home"
+                type="button"
+                role="tab"
+                aria-controls="nav-home"
+                aria-selected="true"
+              >
+                Fallrisk
+              </button>
+              <button
+                // start even active humptyDum
+                onClick={() => setActive("humptyDum")}
+                className={
+                  active === "humptyDum"
+                    ? "nav-item active"
+                    : "nav-link link-secondary"
+                }
+                // end even active humptyDum
+                id="nav-profile-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-profile"
+                type="button"
+                role="tab"
+                aria-controls="nav-profile"
+                aria-selected="false"
+              >
+                Humpty-dumpaty
+              </button>
+              <button
+                // start even contact
+                onClick={() => setActive("contact")}
+                className={
+                  active === "contact"
+                    ? "nav-item active"
+                    : "nav-link link-secondary"
+                }
+                // start even contact
+                id="nav-contact-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-contact"
+                type="button"
+                role="tab"
+                aria-controls="nav-contact"
+                aria-selected="false"
+              >
+                Contact
+              </button>
+            </div>
+          </nav>
+
+          {/* on the body */}
+          <div className="tab-content" id="nav-tabContent">
+            {/* start param 1 */}
+            <div
+              className="tab-pane fade show active"
+              id="nav-home"
+              role="tabpanel"
+              aria-labelledby="nav-home-tab"
+              tabindex="0"
+            >
+              <h6 className="container mx-auto text-center mt-3"> On deploy</h6>
+            </div>
+            {/* end param 1 */}
+
+            {/* start param 2 */}
+            <div
+              className="tab-pane fade"
+              id="nav-profile"
+              role="tabpanel"
+              aria-labelledby="nav-profile-tab"
+              tabindex="0"
+            >
+              <h6 className="container mx-auto text-center mt-3"> On deploy</h6>
+            </div>
+            {/* end param 2 */}
+
+            {/* start param 3 */}
+            <div
+              className="tab-pane fade"
+              id="nav-contact"
+              role="tabpanel"
+              aria-labelledby="nav-contact-tab"
+              tabindex="0"
+            >
+              <h6 className="container mx-auto text-center mt-3"> On deploy</h6>
+            </div>
+            {/* start param 3 */}
+            <div
+              className="tab-pane fade"
+              id="nav-disabled"
+              role="tabpanel"
+              aria-labelledby="nav-disabled-tab"
+              tabindex="0"
+            >
+              ...
+            </div>
+            {/* start param 3 */}
+          </div>
+          {/* end the body */}
+
+          {/* end penampung */}
         </>
       </>
     </>

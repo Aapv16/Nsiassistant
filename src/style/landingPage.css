@@ -111,3 +111,7 @@ textarea {
   border-bottom: #e9e9e9;
   /* margin-bottom: 3px; */
 }
+
+.nav-custom-fallrisk {
+  gap: 1.2rem;
+}

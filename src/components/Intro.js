@@ -4,17 +4,29 @@ import asisten from "../assets/lucu/asisten.png";
 import tentang from "../assets/lucu/tentang.png";
 import Fallrisk from "../assets/lucu/fallrisk.png";
 import FormBox from "../components/FormBox";
-import prop from "../assets/lucu/prop.png";
+import at from "../assets/lucu/at.png";
 
 const Intro = () => {
   // const navigate = useNavigate();
   return (
     <div className="head">
-      <div className="container mx-auto col-lg-12   ">
-        <div className="row" style={{ marginTop: "1rem" }}>
+      {/* start img dashboard */}
+      <div style={{ marginTop: "2.5rem" }}>
+        <div className="mx-auto" style={{ width: "24.5rem", height: "9rem" }}>
+          <img
+            src={at}
+            className="card-img-top mt-3 rounded-2  mx-auto "
+            alt="Divas"
+          />
+        </div>
+      </div>
+      {/* end img dashboard */}
+      {/*start card content */}
+      <div className="container mx-auto col-lg-12">
+        <div className="row" style={{ marginTop: "2rem" }}>
           {/* card comp */}
-          <div className="text-center pt-5 mt-5 ">
-            <div className="custom-intro mx-auto col-lg-6 gap-lg-1 d-lg-flex mt-5">
+          <div className="text-center  ">
+            <div className="custom-intro mx-auto col-lg-6 gap-lg-1 d-lg-flex">
               <Componen
                 image={asisten}
                 kategori="Divas Asistent"
@@ -42,13 +54,12 @@ const Intro = () => {
                 to="/vidio"
               />
 
-              <FormBox
+              <Componen
                 image={tentang}
-                // href="https://www.youtube.com/watch?v=yykwIVI1LMU"
                 kategori="Tentang"
                 judul="Tentang"
                 id="tentang"
-                link="https://aapv16.github.io/forminput/"
+                to="/tentang"
               />
             </div>
           </div>
@@ -58,6 +69,7 @@ const Intro = () => {
           {/* card comp */}
         </div>
       </div>
+      {/* end card content */}
     </div>
   );
 };

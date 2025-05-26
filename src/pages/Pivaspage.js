@@ -8,8 +8,10 @@ import pivas2 from "../assets/lucu/pivas2.png";
 import pivas3 from "../assets/lucu/pivas3.png";
 import pivas4 from "../assets/lucu/pivas4.png";
 import pivas5 from "../assets/lucu/pivas5.png";
+import at from "../assets/lucu/at.png";
 
 const Pivaspage = () => {
+  const [active, setActive] = useState("form");
   return (
     <>
       <NavigationBar logo="Divas Asistent" />
@@ -21,7 +23,11 @@ const Pivaspage = () => {
           role="tablist"
         >
           <button
-            className="nav-link active link-secondary"
+            onClick={() => setActive("form")}
+            className={
+              active === "form" ? "nav-item active" : "nav-link link-secondary"
+            }
+            // className="nav-link active link-secondary"
             id="nav-home-tab"
             data-bs-toggle="tab"
             data-bs-target="#nav-home"
@@ -34,7 +40,11 @@ const Pivaspage = () => {
             <a href="https://aapv16.github.io/forminput/"> </a>
           </button>
           <button
-            className="nav-link link-secondary link-underline-opacity-25 link-underline-opacity-100-hover "
+            onClick={() => setActive("pivas")}
+            className={
+              active === "pivas" ? "nav-item active" : "nav-link link-secondary"
+            }
+            // className="nav-link link-secondary link-underline-opacity-25 link-underline-opacity-100-hover "
             id="nav-profile-tab"
             data-bs-toggle="tab"
             data-bs-target="#nav-profile"
@@ -58,13 +68,17 @@ const Pivaspage = () => {
           tabindex="0"
         >
           <>
-            <div className="card mt-3 container" style={{ width: "22rem" }}>
-              <img src="..." className="card-img-top" alt="..." />
+            <div className="card mt-1 container" style={{ width: "22rem" }}>
+              <img src={at} className="card-img-top mt-3" alt="..." />
               <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card’s content.
+                <h5 className="card-title">Divas Score</h5>
+                <p
+                  className="text-justify w-100 "
+                  style={{ textAlign: "justify" }}
+                >
+                  Penggunaan Tool DIVA adalah untuk memastikan pengkajian akses
+                  IV dilakukan sebelum kanulasi intravena dan melakukan
+                  ekskalasi sesuai skor yang didapatkan.
                 </p>
                 <a
                   href="https://aapv16.github.io/forminput/"
@@ -76,7 +90,6 @@ const Pivaspage = () => {
             </div>
           </>
         </div>
-
         {/* end body 1 */}
 
         {/* start body 2 */}

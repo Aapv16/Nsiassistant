@@ -140,7 +140,7 @@ const History = () => {
             className={
               active === "injury"
                 ? "nav-item active"
-                : "nav-link link-secondary"
+                : "nav-link link-secondary "
             }
             // className="nav-link active link-secondary"
             id="nav-home-tab"
