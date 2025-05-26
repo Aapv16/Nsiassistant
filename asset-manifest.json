@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/Nsiassistant/static/css/main.cce3dd24.css",
-    "main.js": "/Nsiassistant/static/js/main.66479372.js",
+    "main.js": "/Nsiassistant/static/js/main.d04e264c.js",
     "static/js/453.05a46c7a.chunk.js": "/Nsiassistant/static/js/453.05a46c7a.chunk.js",
-    "static/media/at.png": "/Nsiassistant/static/media/at.d6462f9e1fe0ee5e9420.png",
+    "static/media/dashboard.png": "/Nsiassistant/static/media/dashboard.ea0c5ecc7455a37da5e7.png",
+    "static/media/at.png": "/Nsiassistant/static/media/at.ec41a9ca282ae3a7685c.png",
     "static/media/ayang.jpg": "/Nsiassistant/static/media/ayang.5ec2124cae0ae80f8d8e.jpg",
     "static/media/asisten.png": "/Nsiassistant/static/media/asisten.b956be5ecd2dc7bf7467.png",
     "static/media/bootstrap-icons.woff?": "/Nsiassistant/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
@@ -29,11 +30,11 @@
     "static/media/batigras.jpg": "/Nsiassistant/static/media/batigras.41b6c95e16a7b6b8e221.jpg",
     "index.html": "/Nsiassistant/index.html",
     "main.cce3dd24.css.map": "/Nsiassistant/static/css/main.cce3dd24.css.map",
-    "main.66479372.js.map": "/Nsiassistant/static/js/main.66479372.js.map",
+    "main.d04e264c.js.map": "/Nsiassistant/static/js/main.d04e264c.js.map",
     "453.05a46c7a.chunk.js.map": "/Nsiassistant/static/js/453.05a46c7a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cce3dd24.css",
-    "static/js/main.66479372.js"
+    "static/js/main.d04e264c.js"
   ]
 }
