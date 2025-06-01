@@ -12,6 +12,12 @@ const AdvicePage5 = () => {
   useEffect(() => {
     window.scrollTo(0, 0); // scroll ke atas saat halaman dimuat
   }, []);
+  // pulihkan bacggrund
+  document.body.classList.remove("modal-open");
+  // Pulihkan scroll
+  document.body.style.overflow = "auto";
+  const backdrops = document.querySelectorAll(".modal-backdrop");
+  backdrops.forEach((el) => el.remove());
   return (
     <>
       <NavigationBar logo="Stage IV" />;

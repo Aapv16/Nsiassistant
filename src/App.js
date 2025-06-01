@@ -16,8 +16,22 @@ import AdvicePage5 from "./pages/AdvicePage5";
 import Unstageable from "./pages/Unstageable";
 import Suspect from "./pages/Suspect";
 import PivasScore from "./pages/PivasScore";
+import { useEffect } from "react";
 
 const App = () => {
+  useEffect(() => {
+    return () => {
+      // Cleanup saat unmount ke halaman lain
+      document.body.classList.remove("modal-open");
+      // Pulihkan scroll
+      document.body.style.overflow = "auto";
+      const backdrops = document.querySelectorAll(".modal-backdrop");
+      backdrops.forEach((el) => el.remove());
+
+      // Hapus juga style tambahan Bootstrap (opsional, tergantung versi)
+      // document.body.style.paddingRight = "";
+    };
+  }, []);
   return (
     <>
       <Routes>
