@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 const Advice = ({
   id,
   judul,
@@ -16,6 +18,19 @@ const Advice = ({
   displayimg3,
   warna,
 }) => {
+  useEffect(() => {
+    return () => {
+      // Cleanup saat unmount ke halaman lain
+      document.body.classList.remove("modal-open");
+      // Pulihkan scroll
+      document.body.style.overflow = "auto";
+      const backdrops = document.querySelectorAll(".modal-backdrop");
+      backdrops.forEach((el) => el.remove());
+
+      // Hapus juga style tambahan Bootstrap (opsional, tergantung versi)
+      // document.body.style.paddingRight = "";
+    };
+  }, []);
   return (
     <div className="container col-lg-6 ">
       <div className="accordion accordion-flush " idd="accordionFlushExample">
