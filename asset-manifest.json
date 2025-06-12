@@ -1,27 +1,37 @@
 {
   "files": {
-    "main.css": "/Nsiassistant/static/css/main.cce3dd24.css",
-    "main.js": "/Nsiassistant/static/js/main.b825fc36.js",
-    "static/js/453.05a46c7a.chunk.js": "/Nsiassistant/static/js/453.05a46c7a.chunk.js",
+    "main.css": "/Nsiassistant/static/css/main.cf039b07.css",
+    "main.js": "/Nsiassistant/static/js/main.402e324f.js",
+    "static/js/453.27f18d64.chunk.js": "/Nsiassistant/static/js/453.27f18d64.chunk.js",
     "static/media/dashboard.png": "/Nsiassistant/static/media/dashboard.ea0c5ecc7455a37da5e7.png",
     "static/media/at.png": "/Nsiassistant/static/media/at.ec41a9ca282ae3a7685c.png",
+    "static/media/ssi.png": "/Nsiassistant/static/media/ssi.488e1c43e48aeada340c.png",
     "static/media/ayang.jpg": "/Nsiassistant/static/media/ayang.5ec2124cae0ae80f8d8e.jpg",
+    "static/media/ssi2.png": "/Nsiassistant/static/media/ssi2.0f4c7e16cb9e7e57bdec.png",
+    "static/media/ssi4.png": "/Nsiassistant/static/media/ssi4.cdddaaecde0593b754d7.png",
     "static/media/3.png": "/Nsiassistant/static/media/3.e79270d4e7711a85ebf0.png",
     "static/media/asisten.png": "/Nsiassistant/static/media/asisten.b956be5ecd2dc7bf7467.png",
     "static/media/fss.png": "/Nsiassistant/static/media/fss.4b1a9269f0e63df5224a.png",
+    "static/media/ssii.png": "/Nsiassistant/static/media/ssii.ea901bffe9f4e725d6ad.png",
     "static/media/bootstrap-icons.woff?": "/Nsiassistant/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
     "static/media/fs.png": "/Nsiassistant/static/media/fs.c6855de230fc9de96f99.png",
     "static/media/history.png": "/Nsiassistant/static/media/history.81d3e37f59ac429896ef.png",
+    "static/media/ssiIO.png": "/Nsiassistant/static/media/ssiIO.cf52ea80959f4292a816.png",
+    "static/media/ssiPem.png": "/Nsiassistant/static/media/ssiPem.bdbcbe264885197a71aa.png",
     "static/media/pivas5.png": "/Nsiassistant/static/media/pivas5.630846dc74e1b5dadfbf.png",
     "static/media/pivas4.png": "/Nsiassistant/static/media/pivas4.78b63fe411f270039fee.png",
+    "static/media/ssiPO.png": "/Nsiassistant/static/media/ssiPO.69dcf9fe598f91a45729.png",
     "static/media/bootstrap-icons.woff2?": "/Nsiassistant/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
     "static/media/4.png": "/Nsiassistant/static/media/4.0a29f7808d65ff52b9bc.png",
     "static/media/tentang.png": "/Nsiassistant/static/media/tentang.4a856f0a1eb74ec8d4ed.png",
     "static/media/pivas3.png": "/Nsiassistant/static/media/pivas3.d81fc38b6a3220f0f579.png",
+    "static/media/ssi3.png": "/Nsiassistant/static/media/ssi3.30463283345c1b51dc55.png",
     "static/media/fsss.png": "/Nsiassistant/static/media/fsss.9e6e39fcdceed5a09c9e.png",
     "static/media/pivas2.png": "/Nsiassistant/static/media/pivas2.8248b737ff1a30626649.png",
     "static/media/1.png": "/Nsiassistant/static/media/1.6fc9fbf759294ea99bd5.png",
+    "static/media/merr.png": "/Nsiassistant/static/media/merr.511cc21c68008495d2a5.png",
     "static/media/pivas1.png": "/Nsiassistant/static/media/pivas1.584c6064e1268e3ea5be.png",
+    "static/media/ssi1.png": "/Nsiassistant/static/media/ssi1.f7e12b3da5c89c5fb7c8.png",
     "static/media/normal.jpg": "/Nsiassistant/static/media/normal.d057382b2acf8e4af89e.jpg",
     "static/media/2.png": "/Nsiassistant/static/media/2.9a5e248f27fa63f08538.png",
     "static/media/stageIII.jpg": "/Nsiassistant/static/media/stageIII.f66717403e2ce1fafce6.jpg",
@@ -36,12 +46,12 @@
     "static/media/nacl.jpg": "/Nsiassistant/static/media/nacl.e58aecface681a7e5ba3.jpg",
     "static/media/batigras.jpg": "/Nsiassistant/static/media/batigras.41b6c95e16a7b6b8e221.jpg",
     "index.html": "/Nsiassistant/index.html",
-    "main.cce3dd24.css.map": "/Nsiassistant/static/css/main.cce3dd24.css.map",
-    "main.b825fc36.js.map": "/Nsiassistant/static/js/main.b825fc36.js.map",
-    "453.05a46c7a.chunk.js.map": "/Nsiassistant/static/js/453.05a46c7a.chunk.js.map"
+    "main.cf039b07.css.map": "/Nsiassistant/static/css/main.cf039b07.css.map",
+    "main.402e324f.js.map": "/Nsiassistant/static/js/main.402e324f.js.map",
+    "453.27f18d64.chunk.js.map": "/Nsiassistant/static/js/453.27f18d64.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cce3dd24.css",
-    "static/js/main.b825fc36.js"
+    "static/css/main.cf039b07.css",
+    "static/js/main.402e324f.js"
   ]
 }
